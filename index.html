@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BLOG-Hergár Péter</title>
+        <link rel="stylesheet" href="stilus.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="ajax.js"></script>
+        <script src="blog.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <h2>Bloggolás.HU</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Blog bejegyzések</a></li>
+                    <li><a href="new.html">Új</a></li>
+                </ul>
+            </nav>
+            <article>
+                <aside>
+                    <section class="szures">
+                        <form>
+                            <filedset>
+                                <label for="blogkereso">Blog keresés:</label>
+                                <input type="text" name="blogkereso" id="blogkereso"/>
+                            </filedset>
+                        </form>
+                    </section>
+                    <table class="sablonhoz">
+                        <tr class="post">
+                            <td>bejegy. szám:</td>
+                            <td id="id"></td>
+                        </tr>
+                        <tr class="post">
+                            <td>Tárgy:</td>
+                            <td class="targy"></td>
+                        </tr>
+
+                        <tr class="post">
+                            <td>Leírás:</td>
+                            <td class="leiras"></td><br>
+                        </tr>
+                        <tr class="post">
+                            <td>Dátum:</td>
+                            <td id="datum"></td>
+                        </tr>
+                        <tr class="post">
+                            <td>user:</td>
+                            <td id="user_id"></td>
+                        </tr>
+                        <tr class="post">
+                            <td>Like /db/:</td>
+                            <td id="like"></td>
+                        </tr>
+                        <tr class="post">
+                            <td>
+                                <button class="modosit">Módosít</button>
+                            </td>
+                            <td>
+                                <button class="torol">Töröl</button>
+                            </td>
+                        </tr>
+                    </table>
+                </aside>
+                <table class="adatok"></table>
+
+            </article>
+
+        </main>
+    </body>
+</html>

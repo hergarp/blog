@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bloggolás.HU</title>
+        <link rel="stylesheet" href="stilus.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+        <script src="ajax.js"></script>
+        <script src="blog.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <div style="width: 90%; margin: auto;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Tárgy</th>
+                        <th scope="col">Leírás</th>
+                        <th scope="col">Dátum</th>
+                        <th scope="col">user_id</th>
+                        <th scope="col">Like</th>
+                    </tr>
+                </thead>
+
+
+                <tr class="post"></tr>
+                <td class="targy"></td>
+                <td class="leiras"></td>
+                <td id="datum"></td>
+                <td id="user_id"></td>
+                <td id="like"></td>
+                <td style="display: flex;">
+                    <a href="/project/edit/{{ $project->id }}">
+                        <button class="btn btn-sm btn-info">Szerkesztés</button>
+                    </a>
+                    <a>
+                        <form action="/api/project/{{ $project->id }}" method="POST">
+                            <button type="submit" class="btn btn-sm btn-danger">Törlés</button>
+                        </form>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html></tbody><div>
+<a href="/edit">
+    <button class="btn btn-sm btn-success">Új bejegyzés létrehozása</button>
+</a></div></table></div><div style="width: 80%; margin: auto;"><form action="/api/tarsasjatek" method="POST"><div class="form-group row">
+<label for="name" class="col-sm-2 col-form-label">Tárgy</label>
+<div class="col-sm-10">
+    <input type="text" class="form-control" id="name" name="name" placeholder="a bejegyzés tárgya">
+</div>
+
+
+<div class="post">
+    <label for="leiras">Bejegyzés szövege:</label>
+    <textarea class="form-control" rows="5" id="leiras"></textarea>
+</div></div><button type="submit" class="btn btn-success" style="width: 100%;">Mentés</button></form></div><section id="help"><div class="wrap"></section><section id="toggler" class="wrap"><a href="#" class="closed" id="help-btn" title="Segítség mutatása">
+
+    <article>
+        <section class="adatok"></section>
+        <div class="post">
+            <h2 class=targy>"tárgy"</h2>
+            
+            <p class="leiras">
+                    sit amet consectetur adipisicing elit. Sit natus nobis, earum aperiam nesciunt incidunt vero omnis rerum necessitatibus, fugiat doloribus cum sequi animi consectetur soluta! Saepe eaque sunt aliquid? Dolorum magni inventore similique enim obcaecati eius
+                                                                                        fugit animi, accusantium cum excepturi deserunt amet.
+                </p>
+            
+            <br>
+            <span id="datum"></span><br>
+            <span id="user_id"></span><br>
+            <span id="like"></span><br>
+          
+            <input type="submit" value="Módosítás"><br>
+
+            <input type="submit" value="Törlés">
+        </div>
+
+    </article>
+
+    <span>Bejegyzések</span></a><a href="#" class="closed" id="contact-btn" title="Kapcsolat" onclick="showContactWindow()">
+<span>Új bejegyzés</span></a><div class="container">
+<h2>Button Tags</h2>
+<a href="#" class="btn btn-info" role="button">Link Button</a>
+<button type="button" class="btn btn-info">Button</button>
+<input type="button" class="btn btn-info" value="Input Button">
+<input type="submit" class="btn btn-info" value="Submit Button"></div></section><br><section id="content" class="splitted"><a title="tárgy">Tárgy:</a><input type="text" name="title" id="title" value="A 900-s Volvo" placeholder="Bejegyzés címe..." tabindex="1" maxlength="250"></div><br><div class="adatok"><a title="tárgy">Bejegyzés:</a><textarea name="postcontent" id="leiras" cols="105" rows="24">A  9-s kocsik a Volvo típusában a legnagyobbat jelentik!
+                           Nem csak a mérete a nagy a kocsinak, hanem az alap felszereltsége is jobb!</textarea></div><div class="form-group"><label for="comment">Comment:</label><textarea class="form-control" cols="105" rows="5" id="comment"></textarea></div></body></body></html>
